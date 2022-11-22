@@ -84,8 +84,20 @@ body {
    justify-content: space-between;
 }
 
-/* .left-nav img {
-    padding: 0 20px;
+.left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav img {
+    padding: 0 5px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -107,18 +119,94 @@ nav ul li a {
 
 button {
     padding: 0 30px;
-} */
+}
 
 
 
 
 /* MAIN */
-.main {
+main {
     margin-top: 100px;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.img-container > img{
+    height: 500px;
 }
 
 .plan-col {
     border: 1px solid lightgray;
+}
+
+.column-header {
+    text-align: center;
+    border: 2px solid lightgrey;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.column-content {
+    padding: 35px;
+    border: 2px solid lightgrey;
+    line-height: 30px;
+    font-size: 18px;
+    height: 1000px;
+}
+
+.type {
+    margin-bottom: 30px;
+}
+
+.column-content h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.column-content hr{
+    width: 60px;
+    margin-bottom: 30px;
+    color: lightgray;
+}
+
+.column-content h4{
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.column-content i {
+    margin-top: 20px;
+}
+
+{
+    margin-top: 50px;
+}
+
+.fa-check{
+    color: #015eff;
+    font-size: 20px;
+}
+
+.check{
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #015eff;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 40px;
+}
+
+.buy{
+    margin: 30px 0;
+}
+
+.buy a{
+    color:#015eff;
 }
 
 
