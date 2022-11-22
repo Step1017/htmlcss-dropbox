@@ -7,24 +7,84 @@
 
 
 /* GENERALI */
-.flex {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.container-large {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.disp-flex {
     display: flex;
 }
 
-/* HEADER */
-header {
-    max-width: 100vw;
-    height: 80px;
-    align-items: center;
+.just-content-spa-bet {
     justify-content: space-between;
-    
 }
 
-.left-nav {
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.al-it-center {
     align-items: center;
 }
 
-.left-nav img {
+
+
+
+
+/* HEADER */
+#main-header {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* .left-nav img {
     padding: 0 20px;
 }
 
@@ -47,35 +107,33 @@ nav ul li a {
 
 button {
     padding: 0 30px;
-}
+} */
 
 
 
 
 /* MAIN */
-.jumbotron {
-    width: 100vw;
-    background-color: #55b9fc;
-    margin: 0 auto;
+.main {
+    margin-top: 100px;
 }
 
-.container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.plan-col {
+    border: 1px solid lightgray;
 }
 
-h1 {
-    font-size: 3em;
+
+.big-box {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
 }
 
-.left-column {
-    width: 30%;
-    padding: 30px 0;
+.big-box > div {
+    width: 50%;
+    height: 50%;
 }
 
-.img-container {
-    width: 70%;
+#faq {
+    background-color: fuchsia;
 }
 
 
@@ -83,37 +141,70 @@ h1 {
 
 
 /* DEEBUG */
- .debug header {
-    background-color: blanchedalmond;
-    border: 1px dashed black;
- }
+.debug #main-header {
+    height: 100px;
+    background-color: burlywood;
+}
 
- .debug nav {
-    background-color: aqua;
-    border: 1px dashed black;
- }
+.debug .main-nav {
+    height: 100px;
+    width: 97%;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
 
- .debug .left-nav {
-    background-color: rgb(175, 241, 145);
-    border: 1px dashed black;
- }
+.debug main header {
+    height: 600px;
+    background-color: lightcoral;
+}
 
- .debug .right-nav {
-    background-color: rgb(175, 241, 145);
-    border: 1px dashed black;
- }
+.debug main header > .container-large {
+    height: 500px;
+    background-color: cornflowerblue;
+}
 
- .debug .jumbotron {
-    height: 400px;
- }
+.debug main .container {
+    min-height: 300px;
+}
 
- .debug .container {
-    width: 75%;
-    background-color: white;
-    border: 1px dashed black;
- }
+.debug main > section {
+    padding: 30px 0;
+}
 
- .debug .left-column {
-    background-color: red
- }
+.debug .plan-selector {
+    height: 50px;
+    background-color: orange;
+}
 
+.debug .plan-col {
+    min-height: 400px;
+    background-color: pink;
+}
+
+.debug #find-partner .disp-flex > div {
+    min-height: 400px;
+    background-color: darkorange;
+    border: 2px dashed aqua;
+}
+
+.debug #features .disp-flex > div {
+    min-height: 400px;
+    background-color: lightgreen;
+    border: 2px dashed red;
+}
+
+.debug .big-box {
+    background-color: deepskyblue;
+    border: 2px dashed red;
+}
+
+.debug .big-box > div {
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 2px dashed yellow;
+}
+
+.debug #business .disp-flex > div {
+    min-height: 400px;
+    background-color: darkorange;
+    border: 2px dashed aqua;
+}
